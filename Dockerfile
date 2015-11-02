@@ -16,6 +16,6 @@ RUN mkdir /var/jenkins_workspace && chown jenkins:jenkins /var/jenkins_workspace
 USER jenkins
 
 VOLUME /var/jenkins_builds
-VOLUME /var/jenkins_workspace
+#VOLUME /var/jenkins_workspace
 
 COPY config/* /var/jenkins_home/
