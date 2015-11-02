@@ -1,3 +1,4 @@
+credentials
 git-client
 git
 git-server
