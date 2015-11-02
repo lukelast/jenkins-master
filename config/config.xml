@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson>
+<numExecutors>1</numExecutors>
+<mode>EXCLUSIVE</mode>
+<projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$PatternProjectNamingStrategy">
+    <namePattern>[a-z0-9\-]*</namePattern>
+    <description></description>
+    <forceExistingJobs>false</forceExistingJobs>
+  </projectNamingStrategy>
+<workspaceDir>/var/jenkins_workspace/${ITEM_FULLNAME}</workspaceDir>
+<buildsDir>/var/jenkins_builds/${ITEM_FULLNAME}</buildsDir>
+<jdks>
+    <jdk>
+      <name>jdk8</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.JDKInstaller>
+              <id>jdk-8u66-oth-JPR</id>
+              <acceptLicense>true</acceptLicense>
+            </hudson.tools.JDKInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </jdk>
+    <jdk>
+      <name>jdk7</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.tools.JDKInstaller>
+              <id>jdk-7u80-oth-JPR</id>
+              <acceptLicense>true</acceptLicense>
+            </hudson.tools.JDKInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+    </jdk>
+</jdks>
+
+<scmCheckoutRetryCount>1</scmCheckoutRetryCount>
+
+
+</hudson>
