@@ -19,4 +19,6 @@ VOLUME /var/jenkins_builds
 #VOLUME /var/jenkins_workspace
 
 COPY config/* "$JENKINS_HOME"/
+USER root
 RUN chown -R jenkins "$JENKINS_HOME"
+USER jenkins
