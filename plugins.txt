@@ -1,5 +1,6 @@
 git-client
 git
+git-server
 scm-api
 token-macro
 analysis-core
@@ -29,8 +30,11 @@ vsphere-cloud
 maven-info
 versioncolumn
 dependencyanalyzer
+durable-task
 docker-plugin
 docker-workflow
+docker-commons
+docker-build-step
 powershell
 config-file-provider
 groovy
